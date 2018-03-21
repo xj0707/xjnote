@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <script src="jQuery/jquery-3.2.1.min.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+<table align="center" cellpadding="10">
+    <caption>登陆信息</caption>
+    <tr>
+        <td>注册名称</td>
+        <td><input type="text" name="lgname" id="lgname"/></td>
+    </tr>
+    <tr>
+        <td>注册密码</td>
+        <td><input type="password" name="lgpwd" id="lgpwd"/></td>
+    </tr>
+    <tr>
+        <td>验证码</td>
+        <td><input type="text" name="lgchk" id="lgchk"/></td>
+        <td><img src="../../ImageHandle/VerifyImage.class.php" width="80" height="30" id="imghandle" style="cursor: pointer"/></td>
+    </tr>
+    <tr>
+        <td><button id="lgbtn">登陆</button></td>
+        <td><button id="reg">注册</button></td>
+        <td><button id="found">找回密码</button></td>
+    </tr>
+</table>
+</body>
+</html>

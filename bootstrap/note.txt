@@ -1,0 +1,72 @@
+快速入门
+1.标题
+h1---h6  副标题 small  并提供了.h1---.h6的标题内敛样式
+2.文本
+.text-left .text-center .text-right 让文本居左中右
+.text-lowercase文字小写 .text-uppercase大写 .text-capitalize首字母大写
+3.表格
+.table-bordered 带边框的表格
+.table-striped 条纹状表格
+.table-hover 悬停变色
+.table-condensed 紧凑风格
+给行添加颜色 .active .success .info  .waring  .danger
+4.表单（默认是垂直排列的 加入form-inline 就变成内敛的水平排列了）
+input
+form 表单里面直接放一个div中 div有个class="form-group"(这个代表表单组件)
+然后在表单控件里面加入 .form-control （表单一般都有label标签用于提示信息，没有有些提示信息不能显示）
+.input-lg 大输入框 .input-sm 小输入框
+将lable标签里面加入control-label代表可以更改的意思 （加入sr-only可以隐藏label不显示）,然后就在form-group 后面在跟一个样式has-success/has-error/has-warning等
+button
+按钮可以加入 btn btn-default/btn-success/btn-primary等 btn-link这变成链接的样式  btn-lg 改变按钮大小  .active加这个就变成了激活的状态了
+btn-block 将按钮变成了全屏的了width是100%   disabled="disabled" 禁用
+（备注 a标签加入这个样式也可以变成按钮的形式）
+5.图片
+.img-rounded 圆角效果   .img-circle 圆形  .img-thumbnail 边框的圆角图形
+6.响应式
+要手机端显示pc端的页面我就必须设置meta标签 viewport
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+栅格布局:原理就是
+@media screen and (min-width: *px) and (max-widht:*px){
+
+}
+小于768就是手机(.col-xs-)   >=768就是平板(.col-sm-)   >=992就是桌面显示器(.col-md-)  >=1200就是大屏桌面显示器(.col-lg-)
+ex:<div class=" col-lg-3 col-md-4 col-sm-6 col-xs-12"></div>//栅格系统分成了12分 后面数字代表一行中占几份 大屏中占3/12,中屏中占4/12.。。
+col-lg-offset-3 表示偏移量距离左边三份
+文字单位
+px 相对于屏幕分辨率的单位（无法根据屏幕放大缩小）
+em em继承父级元素的字体大小（适合做手机端）
+rem  rem会继承根元素的字体大小 font-size:62.5%（比较稳定）
+字体图标glyphicons
+直接加class样式 .glyphicon .glyphicon-ok  还可以自己给字体图标添加额外的样式 如颜色等
+下拉菜单（参考demo1.html）
+.dropdown控制组件为下拉  .dropdown-menu-right 右对齐  divider分割线
+所有的下拉放在div class="dropdown"里面
+给个下拉的button　添加dropdown-toggle 切换颜色
+<span class="caret"></span>小三角
+需要加入绑定事件 data-toggle="dropdown"
+给下拉的菜单 添加样式dropdown-menu;
+控件组（input-group）
+导航 以一个带有class .nav的无序列表开始
+.nav-tabs 可切换的导航  .nav-pills 胶囊导航  .nav-justified/nav-stacked 导航垂直
+分页
+.pagination 添加分页
+.pager放置在翻页的区域
+.previous向左对齐  .next向右对齐
+进度条
+.progress表示进度条
+.progress-bar-striped 进度条颜色渐变
+列表
+.list-group 列表组
+.badge 代表状态数
+面板（一般用于弹窗和提示信息）
+.panel代表面板
+.panel-body 代表面板内容
+.panel-footer 代表面板的注脚
+
+如何进行交互的
+通过data属性控制页面交互
+
+
+
+
+

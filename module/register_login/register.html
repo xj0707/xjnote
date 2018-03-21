@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<a href="login.html">返回登陆页面</a>
+<form action="" method="post">
+    <table  align="center" cellpadding="10" cellspacing="0">
+        <caption>注册信息</caption>
+        <tr>
+            <td>注册名称：</td>
+            <td><input type="text" name="username" id="regname"/></td>
+            <td><div id="namediv"></div></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input type="password" name="pwd1" id="regpwd1"/></td>
+            <td><div id="pwddiv1"></div></td>
+        </tr>
+        <tr>
+            <td>确认密码：</td>
+            <td><input type="password" name="pwd2" id="regpwd2"/></td>
+            <td><div id="pwddiv2"></div></td>
+        </tr>
+        <tr>
+            <td>邮箱：</td>
+            <td><input type="text" name="email" id="email"/></td>
+            <td><div id="emaildiv"></div></td>
+        </tr>
+        <tr>
+            <td colspan="3" ><input type="button" id="but2" value="更多信息" /></td>
+        </tr>
+        <tr id="morediv1" style="display: none;">
+            <td>密保问题：</td>
+            <td><input type="text" name="question" id="question"/></td>
+            <td><div id="querstiondiv"></div></td>
+        </tr>
+        <tr id="morediv2" style="display: none;">
+            <td>密保答案：</td>
+            <td><input type="text" name="answer" id="answer"/></td>
+            <td><div id="answerdiv"></div></td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="button" id="regbtn" value="注册" disabled="disabled"/></td>
+        </tr>
+    </table>
+    <!--等待进度条-->
+    <div id="imgdiv" style="visibility: hidden;"><img src="img/timg1.gif"/></div>
+</form>
+
+
+
+<script src="jQuery/jquery-3.2.1.min.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

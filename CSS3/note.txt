@@ -1,0 +1,4 @@
+CSS3
+1.圆角  border-radius:20px;（四个值得话就是左上角，右上角，右下角，左下角）
+2.盒阴影 box-shadow:10px 10px 5px #888888;
+3.用图片作为边框 border-image:url(border.png) 30 30 round;//round(是平铺重复);stretch(拉伸填充区域)

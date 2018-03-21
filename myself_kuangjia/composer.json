@@ -1,0 +1,19 @@
+{
+  "name":"xiaophp/aphp",//框架名称
+  "description":"PHP Framework",//框架类型
+  "type":"Framework",//属于什么类型
+  "keywords":[//关键词
+    "PHP","PHP Framework"
+  ],
+  "require":{//配置要求
+    "php":">=5.3.0",
+    "filp/whoops":"*",//加载一个炫酷的错误提示包
+    "riverslei/payment": "~3.1"
+  },
+  "repositories": {//配置这个采用国内镜像
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}
